@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/question_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_title"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+                android:textColor="@color/top_heiziti"
+                android:textScaleX="1"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <com.app.cookbook.xinhe.foodfamily.util.otherUi.ListViewForScrollView
+                android:id="@+id/images_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/images_view"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+                android:textColor="@color/top_heiziti"
+                android:textScaleX="1"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_answer"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone">
+
+                <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                    android:id="@+id/im_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/touxiang" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/im_head"
+                    android:text="霸王别坑"
+                    android:textColor="@color/color_292c31"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_answer"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/question_dianzan" />
+
+                    <TextView
+                        android:id="@+id/zan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="322"
+                        android:textColor="@color/bottom_hui"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="23dp"
+                        android:src="@drawable/question_shoucang" />
+
+                    <TextView
+                        android:id="@+id/shoucang_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="322"
+                        android:textColor="@color/bottom_hui"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1小时前"
+                        android:textColor="#BBBBBB"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/question_content_layout"
+            android:background="@color/edit_hui">
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

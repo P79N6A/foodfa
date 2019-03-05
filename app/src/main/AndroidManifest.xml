@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.cookbook.xinhe.foodfamily"
+    android:installLocation="preferExternal">
+
+    <!--
+      <uses-feature
+          android:name="android.hardware.camera"
+          android:required="false" />
+      <uses-feature
+          android:name="android.hardware.camera.autofocus"
+          android:required="false" />
+    -->
+
+
+    <!-- 百度定位所需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 拨打电话所用权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <permission
+        android:name="com.app.cookbook.xinhe.foodfamily.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.cookbook.xinhe.foodfamily.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- Optional for location -->
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 添加角标权限 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="食与家"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:replace="android:label">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 关于渠道配置 -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}"/> -->
+        <!-- 关于渠道配置 -->
+
+        <activity
+            android:name=".main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 注册 -->
+        <activity
+            android:name=".main.RegisterInvitationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录异常 -->
+        <activity
+            android:name=".update.LoginErrorDialog"
+            android:theme="@style/MyDialogStyle"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.guides.GuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.FoodFamilyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.BianJiActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".main.OtherUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.GuanZhuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.DianZanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.NewQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.XiTongLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:screenOrientation="portrait"
+            android:value="423ff17515038a50c41085cc2dbd0087d2e51cbb" />
+
+        <activity
+            android:name=".main.WoGuanZhuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.GuanZhuBiaoQianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.WoDeTiWenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.HuiDaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.GuanZhuQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MyShouCangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TaShouCangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TAGuanZhuQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TAHuiDaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TaDeTiWenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TaGuanZhuBiaoQianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TaGuanZhuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.TaGuanZhuDeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.GuanZhuTaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.LocationDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".main.MainSearchActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".main.PreviewShareImageActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SuggestedUsersActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- For test only 测试高级功能 -->
+        <activity
+            android:name=".jiguang.PushSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- For test only 测试设置 -->
+        <activity
+            android:name=".jiguang.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity
+            android:name=".jiguang.TestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.app.cookbook.xinhe.foodfamily" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.app.cookbook.xinhe.foodfamily" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":multiprocess">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.DataProvider"
+            android:exported="true" />
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.DownloadProvider"
+            android:exported="true" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.app.cookbook.xinhe.foodfamily" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.app.cookbook.xinhe.foodfamily" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".jiguang.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.app.cookbook.xinhe.foodfamily" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".jiguang.MyJPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_PKGNAME"
+            android:value="applicationId" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="194c7480c08eb0b6cfca9d34" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <activity
+            android:name=".main.FenLeiDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.FenLeiQuestionDetailActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+
+                <!-- 协议部分配置 ,要在web配置相同的 -->
+                <data
+                    android:host="question"
+                    android:scheme="foodstory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.WenTiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AnserActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+
+            <!-- Android 接收外部跳转过滤器 -->
+            <intent-filter>
+
+                <!-- 协议部分配置 ,要在web配置相同的 -->
+                <data
+                    android:host="answer"
+                    android:scheme="foodstory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.YanZhengMaLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.UpdatePhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.ImagesDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.PhotoBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.NetErrorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.DraftActivity"
+            android:screenOrientation="portrait" />
+        <!-- 完善个人信息 -->
+        <activity
+            android:name=".main.PerfectInformationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="24d50841ade64" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="580fbb90e238c8398314e8a59d1569f7" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+
+                <!-- ※这里需要将1105785901改成你在腾讯申请后得到的AppId -->
+                <data android:scheme="tencent1105785901" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- QQ和QQ空间 -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106760762" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.GuanZhuAndQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AnswerReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AnswerReplyByIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MessageCommentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 腾讯埋点统计 -->
+        <!-- 请将value改为MTA分配的appkey < -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="ANYAYD329D2I" />
+        <!-- 请将value改为APP的发布渠道（市场） < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="play" />
+        <!-- 新标签选择页 -->
+        <activity
+            android:name=".main.SelectLabelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".main.JiGuangNetActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".main.InRegardToAppActivity" />
+
+        <!-- 信鸽推送 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v3">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 增强xg_service存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGDaemonService"
+            android:process=":xg_service_v3" />
+
+        <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver
+            android:name=".util.receiver.MessageReceiver"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushServiceV3"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v3" />
+
+        <!-- 【必须】 提高service的存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP包名 .PUSH_ACTION, 如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.app.cookbook.xinhe.foodfamily.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 【注意】authorities修改为 包名.AUTH_XGPUSH, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.AUTH_XGPUSH"
+            android:exported="true" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TPUSH_PROVIDER, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.TPUSH_PROVIDER"
+            android:exported="false" />
+
+        <!-- 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V3, 如demo的包名为：com.qq.xgdemo -->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.TENCENT.MID.V3"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.tencent.rdm.uuid"
+            android:value="eb5fa555d70c3246a4944f55be8c266b" />
+        <!-- 正式【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100282894"
+            tools:replace="android:value" />
+        <!-- 正式【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A1R47PZ8Y2QB"
+            tools:replace="android:value" />
+
+        <!-- 测试【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <!--
+            <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100300031" />
+        -->
+        <!-- 测试【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <!--
+                 <meta-data
+                 android:name="XG_V2_ACCESS_KEY"
+                 android:value="AQ2R5F43K3RZ" />
+        -->
+        <!-- 华为推送 -->
+        <!-- <receiver android:name="com.app.cookbook.xinhe.foodfamily.util.receiver.HuaWeiMyReceiver"> -->
+        <!-- <intent-filter> -->
+
+
+        <!-- &lt;!&ndash; 必须,用于接收TOKEN &ndash;&gt; -->
+        <!-- <action android:name="com.huawei.android.push.intent.REGISTRATION" /> -->
+        <!-- &lt;!&ndash; 必须，用于接收消息 &ndash;&gt; -->
+        <!-- <action android:name="com.huawei.android.push.intent.RECEIVE" /> -->
+        <!-- &lt;!&ndash; 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 &ndash;&gt; -->
+        <!-- <action android:name="com.huawei.android.push.intent.CLICK" /> -->
+        <!-- &lt;!&ndash; 可选，查看PUSH通道是否连接，不查看则不需要 &ndash;&gt; -->
+        <!-- <action android:name="com.huawei.intent.action.PUSH_STATE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- 小米推送 -->
+
+
+        <!-- 存储权限 authorities="你的包名+fileprovider" -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.app.cookbook.xinhe.foodfamily.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity android:name=".util.matisse.ui.MatisseActivity" />
+        <activity android:name=".util.matisse.internal.ui.AlbumPreviewActivity" />
+        <activity android:name=".util.matisse.internal.ui.SelectedPreviewActivity" />
+        <activity
+            android:name=".util.matisse.UCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.EditerTestActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AddQuestionActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.FastAnswerActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.QuestionAnswerDetailActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".main.BindingPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.LoginRegulateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.InvitationCodeActivity"
+            android:theme="@style/codeDialogStyle"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 视频详情 -->
+        <activity
+            android:name=".shiyujia.activity.VideoDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 视频评论回复 -->
+        <activity
+            android:name=".shiyujia.activity.CommentVideoReplyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.NoAccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 标签详情 -->
+        <activity
+            android:name=".shiyujia.activity.LabelDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 好友个人主页 -->
+        <activity
+            android:name=".shiyujia.activity.FriendPageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.CamareActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!-- 我的个人主页 -->
+        <activity
+            android:name=".shiyujia.activity.PersonalHomepageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 我的创作 -->
+        <activity
+            android:name=".shiyujia.activity.MyCreationAvtivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 我的关注 -->
+        <activity
+            android:name=".shiyujia.activity.MyAttentionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".shiyujia.activity.MyCollectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 回复评论 -->
+        <activity
+            android:name=".shiyujia.activity.CommtentReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.MessageActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 九宫格图片选择 -->
+        <activity
+            android:name=".shiyujia.activity.AddImagesActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 草稿箱 -->
+        <activity
+            android:name=".shiyujia.activity.MyDraftsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name=".shiyujia.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的粉丝 -->
+        <activity
+            android:name=".shiyujia.activity.MyFollowerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关注用户 -->
+        <activity
+            android:name=".shiyujia.activity.FriendAttentionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户收藏 -->
+        <activity
+            android:name=".shiyujia.activity.FriendCollectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".shiyujia.activity.FengMianSelectActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 监听网络状态 -->
+        <receiver android:name=".util.netlisten.NetWorkChangReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".shiyujia.activity.FengMianSelect2Activity"
+            android:screenOrientation="portrait" />
+        <!-- 图文详情 -->
+        <activity
+            android:name=".shiyujia.activity.ImageTextDetailActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.MyHomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shiyujia.activity.BannerDetailWebActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

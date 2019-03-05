@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_51B55C"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/color_51B55C"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_dialog_cached_cancel"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="50dp"
+                android:background="@color/transparent"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_marginTop="94dp"
+            android:layout_width="112dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="112dp"
+            android:src="@drawable/suotupian"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wenben1"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wenben2"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="6dp"
+            android:gravity="left"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wenben3"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wenben5"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <RelativeLayout
+            android:id="@+id/setting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/shape_setting_btn"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wenben4"
+                android:textColor="@color/color_0EB39B"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

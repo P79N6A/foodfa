@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/exo_controller_top"
+        style="@style/ExoMediaTitleLayout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/exo_controls_title"
+            style="@style/ExoMediaTitle"
+            android:visibility="gone"
+            tools:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/exo_controller_bottom"
+        style="@style/ExoMediaControllerBottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/exo_position"
+            style="@style/ExoMediaCurrPosition"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            tools:text="" />
+
+        <TextView
+            style="@style/ExoMediaSpan"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/exo_fenge"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/exo_duration"
+            style="@style/ExoMediaDuration"
+            android:visibility="gone"
+            tools:text="" />
+
+        <chuangyuan.ycj.videolibrary.widget.ExoDefaultTimeBar
+            android:id="@id/exo_progress"
+            style="@style/ExoMediaTimeBar"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/ExoMediaTextSwitch"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@id/exo_video_fullscreen"
+            style="@style/ExoMediaButton.Fullscreen"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@id/exo_play"
+        style="@style/ExoMediaButton.Play2"
+        android:visibility="gone" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/play_btn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:src="@drawable/icon_play" />-->
+
+    <ImageButton
+        android:id="@id/exo_pause"
+        style="@style/ExoMediaButton.Pause2"
+        android:visibility="gone" />
+
+</RelativeLayout>

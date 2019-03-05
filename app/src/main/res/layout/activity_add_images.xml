@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/heihui"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--标题栏-->
+            <RelativeLayout
+                android:id="@+id/biaoti_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/back_image" />
+
+                <LinearLayout
+                    android:id="@+id/back_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/wenben9"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/save_caogao_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:text="@string/wenben10"
+                    android:textColor="@color/color_777777"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:id="@+id/save_caogao_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            <!--输入框-->
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="309dp"
+                android:layout_below="@+id/biaoti_layout"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:gravity="left|top"
+
+                android:hint="@string/wenben11"
+                android:lineSpacingExtra="7dp"
+                android:textColor="@color/heihui"
+                android:textColorHint="@color/color_bg_normal"
+                android:textSize="16dp" />
+            <!--标签栏-->
+            <TextView
+                android:id="@+id/biaoqian_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_text"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="29dp"
+                android:text="@string/wenben13"
+                android:textColor="@color/color_0EB39B"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/fengexian"
+                android:layout_width="match_parent"
+                android:layout_height="1.5px"
+                android:layout_below="@+id/biaoqian_tv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/color_E4E4E4"
+                android:orientation="horizontal" />
+
+            <com.app.cookbook.xinhe.foodfamily.util.ui.CCRSortableNinePhotoLayout
+                android:id="@+id/snpl_moment_add_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fengexian"
+                android:layout_margin="10dp"
+                app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                app:bga_snpl_editable="true"
+                app:bga_snpl_itemCornerRadius="0dp"
+                app:bga_snpl_itemSpanCount="5"
+                app:bga_snpl_itemWhiteSpacing="15dp"
+                app:bga_snpl_itemWidth="0dp"
+                app:bga_snpl_maxItemCount="9"
+                app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+                app:bga_snpl_plusEnable="true"
+                app:bga_snpl_sortable="true" />
+
+            <LinearLayout
+                android:id="@+id/tuozhuai_fuceng"
+                android:orientation="vertical"
+                android:layout_below="@+id/snpl_moment_add_photos"
+                android:layout_width="164dp"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/changantuozhuai"
+                android:layout_height="56dp"/>
+
+            <LinearLayout
+                android:id="@+id/fabu_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_0EB39B"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/wenben12"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

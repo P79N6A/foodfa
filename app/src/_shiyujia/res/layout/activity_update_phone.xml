@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/back_iamge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/back_image" />
+
+
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="26dp"
+            android:id="@+id/title_tv"
+            android:layout_below="@+id/back_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更改手机号"
+            android:layout_marginLeft="30dp"
+            android:textColor="#292C31"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/lin_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/word_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#565656"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="亲爱的"
+                        />
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:textColor="#565656"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="瞳孔中看世界"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#565656"
+                        android:text=":"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#565656"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="您绑定的手机号码为："
+                        />
+                    <TextView
+                        android:id="@+id/phone_number_tv"
+                        android:layout_width="wrap_content"
+                        android:textColor="#565656"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="17621233147"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#565656"
+                        android:text=","
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#565656"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="更换绑定的手机号请输入新手机号。"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_number"
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/shouji" />
+
+                <EditText
+                    android:id="@+id/edit_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/shurushoujihao"
+                    android:maxLines="1"
+                    android:textColor="@color/heise"
+                    android:textColorHint="#BBBBBB"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white_color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_yanzhengma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_phone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_password_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/yaoshi" />
+
+                <EditText
+                    android:id="@+id/edit_yanzhengma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:singleLine="true"
+                    android:textColor="@color/heise"
+                    android:textColorHint="#BBBBBB"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/yanzhengma_layout"
+                    android:layout_width="87dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/yanzhengma_bg2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/yanzhenma_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="获取验证码"
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white_color_gray" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/lin_yanzhengma"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/shape_huang_corner"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定绑定"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

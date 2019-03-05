@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/sousuotouying">
+
+        <ImageView
+            android:id="@+id/iamge_back"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="25dp"
+            android:src="@drawable/back_image" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="90dp"
+            android:layout_toRightOf="@+id/iamge_back"
+            android:background="@null"
+            android:hint="搜索食与家内容"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/heihui"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/shanchu_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59dp"
+            android:src="@drawable/shanchu"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:padding="17dp"
+            android:src="@drawable/shanchu" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/resou_rel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:id="@+id/resou_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="热搜"
+                android:textColor="#292C31"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/resou_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/resou_tv"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="37dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jianbian" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fenge_view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/resou_rel"
+            android:background="#F5F8FA"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/clear_top_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fenge_view"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25px"
+                android:text="最近搜索"
+                android:textColor="#777777"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/lajitong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:text="清空"
+                    android:textColor="#777777"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <com.app.cookbook.xinhe.foodfamily.util.ui.TagCloudView
+            android:id="@+id/creat_tab_gv"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_below="@+id/clear_top_rel"
+            android:numColumns="10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_top"
+        android:visibility="gone">
+
+        <!--下方的搜索结果-->
+        <LinearLayout
+            android:id="@+id/search_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/activity_search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="@color/huihuisebiankuang" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_btn_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

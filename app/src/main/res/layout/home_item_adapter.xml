@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="60dp">
+
+            <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                android:id="@+id/im_head"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/im_head"
+                android:text="霸王别坑"
+                android:textColor="@color/color_292c31"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/more_btn"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/more_image" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_layout">
+
+            <FrameLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <chuangyuan.ycj.videolibrary.widget.VideoPlayerView
+                    android:id="@+id/exo_play_context_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:controller_layout_id="@layout/simple_exo_playback_list_view"
+                    app:hide_on_touch="false"
+                    app:player_error_layout_id="@layout/custom_play_error"
+                    app:player_hint_layout_id="@layout/custom_play_btn_hint"
+                    app:player_layout_id="@layout/simple_exo_view"
+                    app:player_list="true"
+                    app:player_load_layout_id="@layout/custom_exo_play_load"
+                    app:player_preview_layout_id="@layout/exo_default_preview_layout"
+                    app:player_replay_layout_id="@layout/simple_exo_play_replay"
+                    app:resize_mode="fill"
+                    app:show_timeout="2000"
+                    app:surface_type="texture_view" />
+
+                <!--<chuangyuan.ycj.videolibrary.widget.VideoPlayerView-->
+                <!--android:id="@+id/exo_play_context_id"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:controller_layout_id="@layout/exo_playback_null_view"-->
+                <!--app:hide_on_touch="false"-->
+                <!--app:player_layout_id="@layout/simple_exo_view"-->
+                <!--app:player_list="true"-->
+                <!--app:player_preview_layout_id="@layout/exo_default_preview_layout"-->
+                <!--app:player_replay_layout_id="@layout/simple_exo_play_replay"-->
+                <!--app:resize_mode="fill"-->
+                <!--app:show_timeout="3000"-->
+                <!--app:surface_type="texture_view" />-->
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <com.app.cookbook.xinhe.foodfamily.shiyujia.view.Love
+                    android:id="@+id/love_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/recommend_label_tv"
+                    android:layout_width="22dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/recommend_label_bg"
+                    android:gravity="center_horizontal"
+                    android:text="推荐"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_layout">
+
+            <LinearLayout
+                android:id="@+id/zan_alyout"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/color_0EB39B" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/zan_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="5dp"
+                        android:text="21点赞"
+                        android:textColor="@color/color_777777"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/comm_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:text="21点赞"
+                        android:textColor="@color/color_777777"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/coll_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:text="21点赞"
+                        android:textColor="@color/color_777777"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zan_alyout"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_565656"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="216dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/content_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <com.like.LikeButton
+                    android:id="@+id/like_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    app:circle_end_color="@color/white"
+                    app:circle_start_color="@color/white"
+                    app:dots_primary_color="@color/white"
+                    app:dots_secondary_color="@color/white"
+                    app:icon_size="24dp"
+                    app:like_drawable="@drawable/home_like_on"
+                    app:unlike_drawable="@drawable/home_like_off" />
+
+                <ImageView
+                    android:id="@+id/comm_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_comm" />
+
+                <com.like.LikeButton
+                    android:id="@+id/collect_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    app:anim_scale_factor="@null"
+                    app:circle_end_color="@color/white"
+                    app:circle_start_color="@color/white"
+                    app:dots_primary_color="@color/white"
+                    app:dots_secondary_color="@color/white"
+                    app:icon_size="24dp"
+                    app:like_drawable="@drawable/home_collect_on"
+                    app:unlike_drawable="@drawable/home_collect_off" />
+
+                <ImageView
+                    android:id="@+id/share_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_share" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

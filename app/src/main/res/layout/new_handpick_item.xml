@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/question_content_layout"
+        android:background="@color/edit_hui" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/question_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_title"
+                android:layout_marginRight="13dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+                android:textColor="@color/bb_black"
+                android:textScaleX="1"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_content"
+                android:layout_marginTop="5dp"
+                android:text="期待您的见解..."
+                android:textColor="@color/color_999999"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/answer_issue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/question_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/hot_issue_attention_bg"
+                android:drawableLeft="@drawable/icon_answer_issue"
+                android:drawablePadding="5dp"
+                android:text="回答问题"
+                android:textColor="@color/color_0EB39B"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/click_answer_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_content"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/question_answer"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_dbdbdb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/line"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/attention_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.like.LikeButton
+                            android:id="@+id/attention_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:paddingRight="130dp"
+                            app:circle_end_color="@color/white"
+                            app:circle_start_color="@color/white"
+                            app:dots_primary_color="@color/white"
+                            app:dots_secondary_color="@color/white"
+                            app:icon_size="18dp"
+                            app:like_drawable="@drawable/icon_answer_collect_on"
+                            app:unlike_drawable="@drawable/icon_answer_collect" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80dp">
+
+                            <TextView
+                                android:id="@+id/attention_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="关注问题"
+                                android:textColor="@color/color_999999"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/answer_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icon_issue_answer" />
+
+                        <TextView
+                            android:id="@+id/answer_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:text="回答问题"
+                            android:textColor="@color/color_999999"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

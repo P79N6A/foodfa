@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BianJiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iamge_back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/back_image" />
+
+                <LinearLayout
+                    android:id="@+id/back_layout"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iamge_back"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="36dp"
+                    android:text="用户反馈"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/group_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="23dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox"
+                            style="@style/Check_Radio2"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:checked="false"
+                            android:text="1"
+                            android:textColor="@color/transparent" />
+
+                        <TextView
+                            android:id="@+id/select_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="程序错误"
+                            android:textColor="#292C31"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkbox2"
+                                style="@style/Check_Radio2"
+                                android:layout_gravity="center_vertical"
+                                android:checked="false"
+                                android:text="2"
+                                android:textColor="@color/transparent" />
+
+                            <TextView
+                                android:id="@+id/select_tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="内容问题"
+                                android:textColor="#292C31"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox3"
+                            style="@style/Check_Radio2"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:text="3"
+                            android:textColor="@color/transparent" />
+
+                        <TextView
+                            android:id="@+id/select_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="产品建议"
+                            android:textColor="#292C31"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fenge_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/group_layout"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/fenge"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:layout_below="@+id/fenge_one"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="请详细描述您遇到的问题或建议"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:textColor="@color/heihui"
+                    android:textColorHint="@color/bottom_hui"
+                    android:textSize="16dp" />
+
+                <com.app.cookbook.xinhe.foodfamily.util.otherUi.HorizontalListView
+                    android:layout_below="@+id/edit_context"
+                    android:id="@+id/camare_grid"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fenge"
+                android:orientation="vertical"
+                android:layout_below="@+id/rel_top"
+                android:background="#F7F7F7"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fenge"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:hint="手机号(选填)"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="13dp"
+                    android:textColor="@color/heihui"
+                    android:textColorHint="#777777"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/fenge1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@color/fenge"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fankui_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_layout"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="12dp"
+                android:text="感谢您的宝贵意见与建议，我们会尽快给您答复。"
+                android:textColor="#BBBBBB"
+                android:textSize="14dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_tijiao"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/fankui_tv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/shape_huang_corner"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

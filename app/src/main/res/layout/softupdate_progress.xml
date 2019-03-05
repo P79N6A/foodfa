@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_alert_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/update_progress"-->
+    <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:progressDrawable="@drawable/layerlist_progress_horzontal" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="正在下载更新,请稍后..."
+        android:textColor="@color/color_333333"
+        android:textSize="15dp" />
+
+    <ProgressBar
+        android:id="@+id/update_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="21dp"
+        android:max="100"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:progressDrawable="@drawable/layerlist_progress_horzontal" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/btn_cancel_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="21dp"
+        android:text="取消下载"
+        android:textColor="@color/color_999999" />
+
+</LinearLayout>

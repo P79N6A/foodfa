@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/edit_alyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_ededed" />
+
+        <EditText
+            android:id="@+id/et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home_details_comm_bg"
+            android:gravity="top"
+            android:maxLength="140"
+            android:text=""
+            android:textColor="@color/color_292c31"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/send_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/color_bbbbbb"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

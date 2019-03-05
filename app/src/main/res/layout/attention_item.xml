@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/suggested_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/red_line"
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mes_btn_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/red_line"
+                android:text="值得关注的人"
+                android:textColor="@color/color_484848"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/more_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_recommend" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/suggestedUsers_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <View
+            android:id="@+id/hui_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/suggestedUsers_recycler"
+            android:background="@color/color_dbdbdb"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/edit_hui"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/question_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transpt_layout"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp">
+
+            <RelativeLayout
+                android:id="@+id/question_user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                    android:id="@+id/question_user_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/touxiang" />
+
+                <TextView
+                    android:id="@+id/question_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/question_user_image"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="130dp"
+                    android:text=""
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/attenion_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/question_user_name"
+                    android:text=""
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/question_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="刚刚"
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_user_layout"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/color_292c31"
+                android:textScaleX="1"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/answer_touxiang_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical">
+
+                    <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                        android:id="@+id/answer_touxiang_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/touxiang" />
+
+                    <TextView
+                        android:id="@+id/answer_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/answer_touxiang_image"
+                        android:text=""
+                        android:textColor="@color/color_484848"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/answer_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/answer_user_name"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/answer_touxiang_image"
+                        android:text=""
+                        android:textColor="#BBBBBB"
+                        android:textSize="12dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.app.cookbook.xinhe.foodfamily.util.otherUi.ListViewForScrollView
+                android:id="@+id/answer_images_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_touxiang_layout"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/answer_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_images_view"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/color_565656"
+                android:textScaleX="1"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/answer_zan_alyout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/zan_and_ping_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/zan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/dot_hei_bg" />
+
+                    <TextView
+                        android:id="@+id/comment_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/color_999999"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

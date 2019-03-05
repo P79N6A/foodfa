@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BianJiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iamge_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/back_image" />
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:layout_width="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="50dp">
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:textSize="16dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="13dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/top_heiziti"
+
+                />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iamge_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="36dp"
+                android:text="编辑"
+                android:textColor="@color/yanzhengma"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/touxiang_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="修改头像"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/select_head_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/touxiang" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nicheng_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/touxiang_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="昵称"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/edit_nicheng"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入昵称"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:src="@drawable/beijingtu"
+                    android:textColor="@color/heise"
+                    android:textColorHint="@color/editcolor"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qianming_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/nicheng_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="签名"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/qianming_edit"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@null"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入签名(20字以内)"
+                    android:src="@drawable/beijingtu"
+                    android:textColor="@color/heise"
+                    android:textColorHint="@color/editcolor"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/zhiye_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/qianming_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="职业"
+
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/zhiye_edit"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入职业"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:src="@drawable/beijingtu"
+                    android:textColor="@color/heise"
+                    android:textColorHint="@color/editcolor"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/xingbie_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/zhiye_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="性别"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/sex_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:text="未说明"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wentifankui"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:visibility="gone"
+                android:layout_below="@+id/xingbie_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="问题反馈"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:visibility="gone"
+                android:layout_below="@+id/wentifankui">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="设置"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/huidian"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/fenge" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/setting_layout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_hui_corner"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textColor="#777777"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

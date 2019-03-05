@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="-70dp"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BianJiActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/image_top"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/wodetiwen_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_top"
+            android:layout_centerHorizontal="true"
+            android:text="暂未提出任何问题，快去说出你的好奇吧"
+            android:textColor="#565656"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

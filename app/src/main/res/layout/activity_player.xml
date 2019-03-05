@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#292C31"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!--取景框-->
+                    <ImageView
+                        android:id="@+id/movie_image_fengmian"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/morenbg" />
+                    <!--标题-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/transparent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="13dp"
+                            android:src="@drawable/back_white_icon" />
+
+                        <LinearLayout
+                            android:id="@+id/back_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/transparent"
+                            android:orientation="horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/wenben17"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|top"
+                    android:hint="@string/wenben18"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/biaoqian_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/wenben19"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bottom_hui"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/fabu_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/movie_fabu_btn" />
+
+                    <LinearLayout
+                        android:id="@+id/select_fengmian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/xiangce" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/wenben20"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.cookbook.xinhe.foodfamily.util.progress.MixTextProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progressbar_horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:mixTextColor="@android:color/white"
+                    app:textColor="@android:color/white"
+                    app:textGravity="CENTER"
+                    app:textSize="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_pregress_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:background="@color/pro_bg_error"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/refresh_again_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="上传失败，点击重新上传"
+                            android:textColor="@color/white"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/shuaxin" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/finish_btn"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="19dp"
+                        android:src="@drawable/baichacha" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

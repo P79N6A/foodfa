@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标签-->
+    <declare-styleable name="TagCloudLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+    <attr name="toolbar" format="reference" />
+    <attr name="album.dropdown.title.color" format="reference|color" />
+    <attr name="album.dropdown.count.color" format="reference|color" />
+    <attr name="album.element.color" format="reference|color" />
+    <attr name="album.thumbnail.placeholder" format="reference|color" />
+    <attr name="album.emptyView" format="reference" />
+    <attr name="album.emptyView.textColor" format="reference|color" />
+    <attr name="listPopupWindowStyle" format="reference" />
+    <attr name="listPopupWindowAnimationStyle" format="reference" />
+    <attr name="listPopupWindowBackground" format="reference" />
+    <attr name="page.bg" format="reference|color" />
+    <attr name="bottomToolbar.bg" format="reference|color" />
+    <attr name="bottomToolbar.preview.textColor" format="reference|color" />
+    <attr name="bottomToolbar.apply.textColor" format="reference|color" />
+    <attr name="preview.bottomToolbar.back.textColor" format="reference|color" />
+    <attr name="preview.bottomToolbar.apply.textColor" format="reference|color" />
+    <attr name="item.placeholder" format="reference|color" />
+    <attr name="item.checkCircle.backgroundColor" format="reference|color" />
+    <attr name="item.checkCircle.borderColor" format="reference|color" />
+    <attr name="capture.textColor" format="reference|color" />
+
+    <declare-styleable name="ucrop_AspectRatioTextView">
+        <attr name="ucrop_artv_ratio_title" format="string" />
+        <attr name="ucrop_artv_ratio_x" format="float" />
+        <attr name="ucrop_artv_ratio_y" format="float" />
+    </declare-styleable>
+
+    <!--加载框-->
+    <declare-styleable name="LoadingView">
+
+        <attr name="loadingText" format="string" />
+        <attr name="loadingTextAppearance" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ucrop_UCropView">
+        <!--Crop image view-->
+        <attr name="ucrop_aspect_ratio_x" format="float" />
+        <attr name="ucrop_aspect_ratio_y" format="float" />
+        <!--Overlay view-->
+        <attr name="ucrop_show_oval_crop_frame" format="boolean" />
+        <attr name="ucrop_circle_dimmed_layer" format="boolean" />
+        <attr name="ucrop_dimmed_color" format="color" />
+        <attr name="ucrop_grid_stroke_size" format="dimension" />
+        <attr name="ucrop_grid_color" format="color" />
+        <attr name="ucrop_grid_row_count" format="integer" />
+        <attr name="ucrop_grid_column_count" format="integer" />
+        <attr name="ucrop_show_grid" format="boolean" />
+        <attr name="ucrop_frame_stroke_size" format="dimension" />
+        <attr name="ucrop_frame_color" format="color" />
+        <attr name="ucrop_show_frame" format="boolean" />
+    </declare-styleable>
+
+    <!--可折叠文本控件属性组声明-->
+    <declare-styleable name="ExpandableTextView">
+        <!--默认展示行数，只能使用整数-->
+        <attr name="collapseLines" format="integer" />
+        <!--展开提示语-->
+        <attr name="expandTipLabel" format="string" />
+        <!--收起提示语-->
+        <attr name="collapseTipLabel" format="string" />
+        <!--收缩后的图标，只能使用应用图片资源-->
+        <attr name="collapseDrawable" format="reference" />
+        <!--展开后的图标，只能使用应用图片资源-->
+        <attr name="expandDrawable" format="reference" />
+        <attr name="tipsColor" format="color" />
+        <!-- positions属性只能指定<enum>声明的其中之一 -->
+        <attr name="tipPosition">
+            <enum name="align_right" value="0" />
+            <enum name="bottom_start" value="1" />
+            <enum name="bottom_center" value="2" />
+            <enum name="bottom_end" value="3" />
+        </attr>
+        <!--自定义文字颜色直接使用系统属性-->
+        <attr name="android:textColor" />
+        <!--自定义文字大小直接使用系统属性-->
+        <attr name="android:textSize" />
+        <!--自定义文字直接使用系统属性-->
+        <attr name="android:text" />
+        <!--自定义展开折叠控件与顶部间距-->
+        <attr name="tipMarginTop" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 文本自动换行view -->
+    <declare-styleable name="AutoWrapTextViewStyle">
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="lineSpacingExtra" format="integer" />
+    </declare-styleable>
+
+    <!--标签id-->
+    <declare-styleable name="labels_view">
+        <attr name="selectType" format="enum">
+            <enum name="NONE" value="1" />
+            <enum name="SINGLE" value="2" />
+            <enum name="SINGLE_IRREVOCABLY" value="3" />
+            <enum name="MULTI" value="4" />
+        </attr>
+        <attr name="maxSelect" format="integer" />
+        <attr name="labelTextColor" format="reference|color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextPaddingLeft" format="dimension" />
+        <attr name="labelTextPaddingTop" format="dimension" />
+        <attr name="labelTextPaddingRight" format="dimension" />
+        <attr name="labelTextPaddingBottom" format="dimension" />
+        <attr name="lineMargin" format="dimension" />
+        <attr name="wordMargin" format="dimension" />
+        <attr name="labelBackground" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="ClipSquareImageView">
+        <attr name="ClipSquareIV_BorderDistance" format="dimension" />
+        <attr name="ClipSquareIV_BorderWidth" format="dimension" />
+        <attr name="ClipSquareIV_BorderColor" format="color" />
+        <attr name="ClipSquareIV_OutsideColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MSeekBar">
+        <attr name="textBackground" format="reference" />
+        <attr name="textOrientation" format="enum">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MixTextProgressBar">
+        <attr name="mixTextColor" format="color" />
+        <attr name="textColor"  />
+        <attr name="textSize"  />
+        <attr name="textGravity" format="enum">
+            <enum name="LEFT" value="0" />
+            <enum name="CENTER" value="1" />
+            <enum name="RIGHT" value="2" />
+        </attr>
+        <attr name="textPadding" format="dimension" />
+    </declare-styleable>
+
+    <!--视频播放-->
+    <!-- Must be kept in sync with AspectRatioFrameLayout -->
+    <attr name="resize_mode" format="enum">
+        <enum name="fixed_16_9" value="0"/>
+        <enum name="fixed_4_3" value="1"/>
+        <enum name="match" value="2"/>
+        <enum name="fill" value="3"/>
+        <enum name="fit" value="4"/>
+        <enum name="origin" value="5"/>
+    </attr>
+
+    <!-- Must be kept in sync with SimpleExoPlayerView -->
+    <attr name="surface_type" format="enum">
+        <enum name="none" value="0"/>
+        <enum name="surface_view" value="1"/>
+        <enum name="texture_view" value="2"/>
+        <enum name="spherical_view" value="3"/>
+    </attr>
+    <attr name="show_timeout" format="integer"/>
+    <attr name="rewind_increment" format="integer"/>
+    <attr name="fastforward_increment" format="integer"/>
+    <attr name="player_layout_id" format="reference"/>
+    <attr name="controller_layout_id" format="reference"/>
+    <attr name="show_shuffle_button" format="reference"/>
+    <!--设置按钮按钮样式-->
+    <attr name="player_fullscreen_image_selector" format="reference" />
+
+    <attr name="repeat_toggle_modes">
+        <flag name="none" value="0"/>
+        <flag name="one" value="1"/>
+        <flag name="all" value="2"/>
+    </attr>
+
+
+
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="resize_mode"/>
+    </declare-styleable>
+
+    <declare-styleable name="DefaultTimeBar">
+        <attr name="bar_height" format="dimension"/>
+        <attr name="touch_target_height" format="dimension"/>
+        <attr name="ad_marker_width" format="dimension"/>
+        <attr name="scrubber_enabled_size" format="dimension"/>
+        <attr name="scrubber_disabled_size" format="dimension"/>
+        <attr name="scrubber_dragged_size" format="dimension"/>
+        <attr name="scrubber_drawable" format="reference"/>
+        <attr name="played_color" format="color"/>
+        <attr name="scrubber_color" format="color"/>
+        <attr name="buffered_color" format="color"/>
+        <attr name="unplayed_color" format="color"/>
+        <attr name="ad_marker_color" format="color"/>
+        <attr name="played_ad_marker_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="PlayerView">
+        <attr name="use_artwork" format="boolean"/>
+        <attr name="shutter_background_color" format="color"/>
+        <attr name="default_artwork" format="reference"/>
+        <attr name="use_controller" format="boolean"/>
+        <attr name="hide_on_touch" format="boolean"/>
+        <attr name="hide_during_ads" format="boolean"/>
+        <attr name="auto_show" format="boolean"/>
+        <attr name="resize_mode"/>
+        <attr name="surface_type"/>
+        <attr name="player_layout_id"/>
+        <!-- PlayerControlView attributes -->
+        <attr name="show_timeout"/>
+        <attr name="rewind_increment"/>
+        <attr name="fastforward_increment"/>
+        <attr name="repeat_toggle_modes"/>
+        <attr name="show_shuffle_button"/>
+        <attr name="controller_layout_id"/>
+        <!--显示缓冲-->
+        <attr name="show_buffering" format="boolean"/>
+        <!--保持播放器重置内容-->
+        <attr name="keep_content_on_player_reset" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PlayerControlView">
+        <attr name="show_timeout"/>
+        <attr name="rewind_increment"/>
+        <attr name="fastforward_increment"/>
+        <attr name="repeat_toggle_modes"/>
+        <attr name="show_shuffle_button"/>
+        <attr name="controller_layout_id"/>
+        <attr name="player_fullscreen_image_selector"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.jfrog.bintray'
+version = "1.4.10"
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    repositories {
+        jcenter()
+        google()
+    }
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 41
+        versionName version
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.google.gms:google-services:4.0.1'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral ()
+        maven {url 'https://dl.bintray.com/jetbrains/anko'} //这是你需要加入的，这个是解决这个问题的关键地方，我就是添加这个maven后不再报上面的错误了
+        maven {url "https://maven.google.com"} //谷歌广告
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    compileOnly 'com.android.support:support-v4:27.1.0'
+//    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}

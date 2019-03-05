@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BiaoQianActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iamge_back"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/back_image" />
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:layout_width="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="50dp">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fabu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="36dp"
+            android:text="发布"
+            android:textColor="@color/yanzhengma"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.app.cookbook.xinhe.foodfamily.util.otherUi.FlowLayout
+        android:id="@+id/addtag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="33dp">
+
+        <EditText
+            android:id="@+id/add_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flag_edit"
+            android:hint="输入标签"
+            android:textColorHint="#BBBBBB"
+            android:maxLength="7"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="#BBBBBB"
+            android:textSize="16dp" />
+    </com.app.cookbook.xinhe.foodfamily.util.otherUi.FlowLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="18dp"
+        android:background="@color/fenge">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/lishi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="历史记录"
+            android:textColor="@color/meishititle"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="最多可添加5个标签"
+            android:textColor="@color/meishititle"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <com.app.cookbook.xinhe.foodfamily.util.otherUi.FlowLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="10dp" />
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shipu_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            />
+    </com.andview.refreshview.XRefreshView>
+
+
+</LinearLayout>

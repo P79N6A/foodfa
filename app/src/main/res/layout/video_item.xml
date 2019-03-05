@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="60dp">
+
+            <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                android:id="@+id/im_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/im_head"
+                android:text="霸王别坑"
+                android:textColor="@color/color_292c31"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/more_btn"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/more_image" />
+
+        <RelativeLayout
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_layout">
+
+            <fm.jiecao.jcvideoplayer_lib.VideoListPlayer
+                android:id="@+id/home_videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <com.app.cookbook.xinhe.foodfamily.shiyujia.view.Love
+                android:id="@+id/love_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/start_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tishi_tv"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="当前为非WIFI环境，已为您暂停播放"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tishi_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="31dp"
+                    android:background="@drawable/use_label_bg"
+                    android:text="继续播放"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_layout">
+
+            <LinearLayout
+                android:id="@+id/zan_alyout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@color/color_0EB39B" />
+
+                <TextView
+                    android:id="@+id/zan_comm_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="15dp"
+                    android:text="21点赞"
+                    android:textColor="@color/color_777777"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zan_alyout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/color_565656"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.like.LikeButton
+                    android:id="@+id/like_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="39dp"
+                    android:paddingTop="15dp"
+                    app:circle_end_color="@color/white"
+                    app:circle_start_color="@color/white"
+                    app:dots_primary_color="@color/white"
+                    app:dots_secondary_color="@color/white"
+                    app:icon_size="18dp"
+                    app:like_drawable="@drawable/home_like_on"
+                    app:unlike_drawable="@drawable/home_like_off" />
+
+                <ImageView
+                    android:id="@+id/comm_btn"
+                    android:layout_width="59dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="39dp"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/home_comm" />
+
+                <com.like.LikeButton
+                    android:id="@+id/collect_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="39dp"
+                    android:paddingTop="15dp"
+                    app:circle_end_color="@color/white"
+                    app:circle_start_color="@color/white"
+                    app:dots_primary_color="@color/white"
+                    app:dots_secondary_color="@color/white"
+                    app:icon_size="18dp"
+                    app:like_drawable="@drawable/home_collect_on"
+                    app:unlike_drawable="@drawable/home_collect_off" />
+
+                <ImageView
+                    android:id="@+id/share_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/home_share" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

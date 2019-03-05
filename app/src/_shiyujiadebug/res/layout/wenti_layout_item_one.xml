@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_title"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+        android:textColor="@color/top_heiziti"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginLeft="13dp"
+        android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+        android:textColor="@color/top_heiziti"
+        android:textSize="14dp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/touxiang_layout"
+        android:layout_below="@+id/question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/select_head_image"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/touxiang" />
+        <LinearLayout
+            android:layout_toRightOf="@+id/select_head_image"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奥斯卡打飞机阿卡丽积分的卡视角"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/bottom_hui"
+                android:textStyle="normal"
+                />
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最新回答"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/meishititle"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="124回答"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/meishititle"
+                    android:textStyle="normal"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/touxiang_layout"
+        android:background="@color/edit_hui">
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BianJiActivity">
+
+    <ImageView
+        android:id="@+id/iamge_back"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="18dp"
+        android:src="@drawable/back_image"
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/iamge_back"
+        android:layout_marginTop="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yanzhengma"
+        android:text="TA关注的标签"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="138dp">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/touxiang_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="13dp"
+                android:src="@drawable/tou1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/touxiang_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/biaoqian_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="茶"
+                    android:textColor="@color/yanzhengma"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="3dp"
+                        android:text="500关注"
+                        android:textColor="@color/bottom_hui"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/lianjie" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="68问题"
+                        android:textColor="@color/bottom_hui"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tiwen_title"
+                android:layout_below="@+id/touxiang_image"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="最新提问："
+                />
+            <TextView
+                android:layout_toRightOf="@+id/tiwen_title"
+                android:id="@+id/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/touxiang_image"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="精神科地方就是看老大劲焚枯食淡金风科技谁离开房间时刻"
+                android:textColor="@color/bb_black"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/edit_hui" />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/suggested_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/red_line"
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mes_btn_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/red_line"
+                android:text="值得关注的人"
+                android:textColor="@color/color_484848"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/more_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_recommend" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/suggestedUsers_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+        <View
+            android:id="@+id/hui_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/suggestedUsers_recycler"
+            android:background="@color/color_dbdbdb"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggested_layout"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_top"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_guanzhu_bg" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_top"
+            android:layout_centerHorizontal="true"
+            android:text="关注动态还是空的哦~"
+            android:textColor="#565656"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_jieshao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="关注你喜欢的人、感兴趣的问题和标签就能刷出动态啦~"
+            android:textColor="#565656"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

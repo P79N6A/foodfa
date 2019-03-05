@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.RegisterInvitationActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/activity_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:text="请输入邀请码"
+        android:textColor="@color/yanzhengma"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <com.app.cookbook.xinhe.foodfamily.util.layout.PhoneCode
+        android:id="@+id/edit_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/invitation_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textColor="@color/color_FF411C"
+        android:textSize="16dp" />
+
+</RelativeLayout>

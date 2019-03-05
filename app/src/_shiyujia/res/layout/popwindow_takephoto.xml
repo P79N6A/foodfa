@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- <LinearLayout
+         android:id="@+id/top_title"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="30px"
+         android:layout_marginRight="30px"
+         android:gravity="center"
+         android:background="@drawable/shape_corner_up"
+         android:layout_height="60px">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/xuenzefangshi"
+             android:textColor="@color/contentTitleColor"
+             android:textSize="16px"
+             android:layout_gravity="center"
+             android:gravity="center"
+             />
+     </LinearLayout>-->
+    <!--<view
+        android:id="@+id/fenge"
+        style="@style/shoukuanma_item_fengexian"
+        />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/paizhao"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnTakePhoto"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner_up_blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:text="@string/xiangce"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnChooseFromAlbum"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/shape_corner_down_blue"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:text="@string/alert_dialog_cached_cancel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnCancle"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/shape_corner_blue"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+</LinearLayout>

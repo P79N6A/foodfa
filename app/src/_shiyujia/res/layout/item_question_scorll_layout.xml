@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:visibility="gone"
+            android:id="@+id/rel_quanju"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/linear_left"
+                    android:layout_width="100dp"
+                    android:orientation="vertical"
+                    android:background="@color/transparent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/toolbar_left_button1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/back_image"
+                    />
+                <TextView
+                    android:id="@+id/toolbar_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:visibility="invisible"
+                    android:textSize="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/toolbar_right_button1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="visible"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textStyle="normal"
+                    />
+                <TextView
+                    android:id="@+id/bianji_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:visibility="visible"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/top_heiziti"
+                    android:textStyle="normal"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+
+            android:layout_marginRight="13dp"
+            android:text="撒放好久开始等回复晋升的环境就是"
+            android:textColor="@color/top_heiziti"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+
+        <com.app.cookbook.xinhe.foodfamily.util.otherUi.HorizontalListView
+            android:id="@+id/horizontalListView"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </com.app.cookbook.xinhe.foodfamily.util.otherUi.HorizontalListView>
+
+        <!--文字描述-->
+        <LinearLayout
+            android:id="@+id/miaoshu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalListView"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="3"
+                    android:text=""
+                    android:textColor="@color/color_text_02" />
+                <com.app.cookbook.xinhe.foodfamily.util.otherUi.ListViewForScrollView
+                    android:id="@+id/question_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="#00000000"
+                    android:dividerHeight="0dip"
+                    android:visibility="gone"
+                    android:layout_marginBottom="1dp"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_back"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_back_tv"
+                    android:gravity="center_vertical|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.app.cookbook.xinhe.foodfamily.util.otherUi.ListViewForScrollView
+                    android:id="@+id/question_image_view_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="#00000000"
+                    android:visibility="gone"
+                    android:dividerHeight="0dip"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/xiala" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_height="2px">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/yiguanzhu_tv"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/jiahaoguanzhu"
+
+                        />
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已关注"
+                        android:textColor="#777777"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注"
+                        android:visibility="invisible"
+                        android:textColor="#777777"
+                        android:textSize="14dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/weiguanzhu_btn"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/jiahaoguanzhu"
+                        />
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关注问题"
+                        android:textColor="@color/top_heiziti"
+                        android:textSize="14dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1.5px"
+                android:background="#E4E4E4"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/liji_answer_btn"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/lijihuidasrc"
+                    />
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即回答"
+                    android:textColor="@color/top_heiziti"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/wenti_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/miaoshu_layout"
+            android:background="@color/white_color_gray"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:text="468回答"
+                android:textColor="@color/top_heiziti"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.app.cookbook.xinhe.foodfamily.util.otherUi.ListViewForScrollView
+        android:id="@+id/buzhou_view"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:layout_marginBottom="1dp"
+        android:listSelector="@android:color/transparent" />
+
+
+
+</RelativeLayout>

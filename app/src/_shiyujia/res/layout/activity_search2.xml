@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/sousuotouying"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/iamge_back"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_image"
+            />
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_toRightOf="@+id/iamge_back"
+            android:layout_centerVertical="true"
+            android:textColor="@color/heihui"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="normal"
+            android:textColorHint="#BBBBBB"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:hint="健身餐"
+            android:layout_marginRight="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/shanchu_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="59dp"
+            android:visibility="gone"
+            android:src="@drawable/shanchu"
+            />
+
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/bottom_hui"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <com.andview.refreshview.XRefreshView
+        android:layout_below="@+id/rel_top"
+        android:id="@+id/xrefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:scrollbars="vertical" />
+
+    </com.andview.refreshview.XRefreshView>
+</RelativeLayout>

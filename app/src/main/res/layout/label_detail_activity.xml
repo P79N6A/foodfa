@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.app.cookbook.xinhe.foodfamily.shiyujia.view.MyScrollview
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iamge_back"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:src="@drawable/back_image" />
+
+            <RelativeLayout
+                android:id="@+id/user_msg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/iamge_back">
+
+                <com.app.cookbook.xinhe.foodfamily.shiyujia.view.PolygonView
+                    android:id="@+id/label_im"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/touxiang" />
+
+                <TextView
+                    android:id="@+id/label_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/label_im"
+                    android:text="fffffff"
+                    android:textColor="@color/color_292c31"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/label_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/label_im"
+                    android:text="ddddddddd"
+                    android:textColor="@color/color_969696"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/user_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/home_details_attention_bg"
+                    android:text="关注"
+                    android:textColor="@color/color_0EB39B"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_im"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ddddddd"
+                    android:textColor="@color/color_565656"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_msg_layout">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/color_00000000"
+                    app:tabSelectedTextColor="@color/color_0EB39B"
+                    app:tabTextColor="@color/color_292c31" />
+            </LinearLayout>
+
+            <com.app.cookbook.xinhe.foodfamily.shiyujia.view.CustomViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout" />
+        </RelativeLayout>
+    </com.app.cookbook.xinhe.foodfamily.shiyujia.view.MyScrollview>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

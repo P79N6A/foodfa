@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.app.cookbook.xinhe.foodfamily.main.BianJiActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="63dp"
+        android:text="消息"
+        android:textColor="@color/yanzhengma"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/open_mes"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/select_label_bg"
+        android:padding="7dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/mes_close">
+
+            <TextView
+                android:id="@+id/mes_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="消息推送未打开，将无法第一时间接收到邀答、公告等重要信息哦！"
+                android:textColor="@color/color_777777"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/no_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:text="暂时不开启"
+                android:textColor="@color/color_292c31"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mes_close"
+            android:layout_width="64dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mes_btn_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/shanchu"
+            android:text="去开启"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/touxiang_layout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@+id/open_mes">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/huida" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="最新回答"
+                android:textColor="@color/top_heiziti"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zuixin_message_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/bottom_hui"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/system_answer_img_hui"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/zuixin_message_number"
+                android:src="@drawable/huidian"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/system_answer_img_hong"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/zuixin_message_number"
+                android:src="@drawable/reddian"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/fenge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nicheng_layout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@+id/touxiang_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/icon_msg_zan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/dianzan_shoucang"
+                android:textColor="@color/top_heiziti"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dianzan_message_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="@color/bottom_hui"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/system_dianzan_img_hui"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dianzan_message_number"
+                android:src="@drawable/huidian"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/system_dianzan_img_hong"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dianzan_message_number"
+                android:src="@drawable/reddian"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/fenge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pinglun_layout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@+id/nicheng_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/pinglun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="评论"
+                android:textColor="@color/top_heiziti"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pinglun_message_comm_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="@color/bottom_hui"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/system_pinglun_comm_img_hui"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/pinglun_message_comm_number"
+                android:src="@drawable/huidian"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/system_pinglun_comm_img_hong"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/pinglun_message_comm_number"
+                android:src="@drawable/reddian"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/fenge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xiaoxi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@+id/pinglun_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/xuren" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/guanzhu_question1"
+                android:textColor="@color/top_heiziti"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guanzhu_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="@color/bottom_hui"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/system_guanzhu_img_hui"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/guanzhu_number"
+                android:src="@drawable/huidian"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/system_guanzhu_img_hong"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/guanzhu_number"
+                android:src="@drawable/reddian"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/fenge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhiye_layout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@+id/xiaoxi_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/xitongtongzhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="系统通知"
+                android:textColor="@color/top_heiziti"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xitong_location_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="@color/bottom_hui"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/system_location_img_hui"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/xitong_location_number"
+                android:src="@drawable/huidian"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/system_location_img_hong"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/xitong_location_number"
+                android:src="@drawable/reddian"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/fenge" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/imageText_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.youth.banner.Banner
+                android:id="@+id/home_details_kanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:id="@+id/writer_user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/home_details_kanner">
+
+                <RelativeLayout
+                    android:id="@+id/user_msg_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100dp">
+
+                    <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                        android:id="@+id/writer_user_head"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/touxiang" />
+
+                    <TextView
+                        android:id="@+id/writer_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/writer_user_head"
+                        android:text="小燕"
+                        android:textColor="@color/color_292c31"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/user_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/writer_user_name"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/writer_user_head"
+                        android:text="唯有美食美景不可错过"
+                        android:textColor="@color/color_bbbbbb"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_attention"
+                    android:layout_width="70dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/answer_attention_user_bg_on"
+                    android:gravity="center"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:text="关注"
+                    android:textColor="@color/color_51B55C"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/user_attention_off"
+                    android:layout_width="70dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/answer_attention_user_bg"
+                    android:gravity="center"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:text="已关注"
+                    android:textColor="@color/color_bbbbbb"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_dbdbdb" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writer_user_layout"
+                android:enabled="false">
+
+                <TextView
+                    android:id="@+id/details_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textColor="@color/color_292c31"
+                    android:textSize="16dp" />
+
+                <com.app.cookbook.xinhe.foodfamily.shiyujia.view.LabelsView
+                    android:id="@+id/labels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    app:labelTextPaddingBottom="5dp"
+                    app:labelTextPaddingTop="5dp"
+                    app:labelTextSize="16sp"
+                    app:lineMargin="5dp"
+                    app:selectType="NONE"
+                    app:wordMargin="10dp" />
+
+                <TextView
+                    android:id="@+id/zan_and_ping_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/labels"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="11dp"
+                    android:text="23点赞 34评论 43收藏"
+                    android:textColor="@color/color_969696"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/details_time_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/labels"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="11dp"
+                    android:text="今天 12:32"
+                    android:textColor="@color/color_969696"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pinglun_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/content_layout"
+                android:layout_marginTop="12dp"
+                android:background="@color/color_F5F8FA"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/comm_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="全部评论(34)"
+                    android:textColor="@color/color_565656"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/empty_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinglun_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_empty"
+                    android:layout_width="152dp"
+                    android:layout_height="152dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_message_comm" />
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_empty"
+                    android:layout_centerHorizontal="true"
+                    android:text="还没有评论呦～"
+                    android:textColor="#565656"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comm_layoutt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageText_msg_layout"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/user_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="150dp">
+
+                    <com.app.cookbook.xinhe.foodfamily.util.CircleImageView
+                        android:id="@+id/user_head"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="11dp" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_toRightOf="@+id/user_head"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="谁说我是胖子"
+                        android:textColor="@color/color_777777"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/comment_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_name"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/user_head"
+                        android:text="刚刚"
+                        android:textColor="@color/color_777777"
+                        android:textSize="9dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/reply_btn"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="23dp"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/lajitong"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/reply_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/zan_comm_layout"
+                    android:paddingRight="24dp"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/icon_comment_reply" />
+
+                <LinearLayout
+                    android:id="@+id/zan_comm_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/comment_im"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/icon_answer_collect" />
+
+                    <TextView
+                        android:id="@+id/zan_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="43"
+                        android:textColor="@color/color_777777"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/color_292c31"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/reply_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_F5F8FA"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/reply_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_484848"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/reply_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/color_5377B3"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

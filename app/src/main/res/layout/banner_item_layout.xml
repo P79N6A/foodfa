@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="142dp">
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_img"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/morenbg"
+            android:layout_gravity="center_vertical"
+            app:riv_border_color="@color/transparent"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="118dp">
+            <LinearLayout
+                android:layout_width="64dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape_tuijian_shipu_bg"
+                android:layout_height="22dp">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="推荐食谱"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/shipu_name"
+                android:layout_width="match_parent"
+                android:layout_marginRight="12dp"
+                android:text="推荐食谱推荐食谱推荐食谱"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:textColor="#292C31"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shipu_tips"
+                android:layout_width="match_parent"
+                android:layout_marginRight="12dp"
+                android:text="推荐食谱推荐食谱推荐食谱推荐推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱推荐食谱"
+                android:layout_alignParentBottom="true"
+                android:textSize="13dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#777777"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff40c2fc</color>
+    <color name="colorPrimaryDark">#ff08a7ee</color>
+    <color name="colorAccent">#ff75d1fa</color>
+    <color name="color_text_01">#ffc5c9ce</color>
+    <color name="split_line_color">#ffc9d1d9</color>
+    <color name="input_stock">#ffbdc7d8</color>
+    <color name="color_text_02">#ff181c20</color>
+    <color name="text_color_02">#FF6C6C6C</color>
+    <color name="sort_catagory">#FFE0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="editcolor">#BBBBBB</color>
+    <color name="heiziti">#292C31</color>
+    <color name="tishiwenzicolor">#979797</color>
+
+
+    <color name="province_line_border">#C7C7C7</color>
+</resources>

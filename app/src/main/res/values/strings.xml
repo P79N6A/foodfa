@@ -1,0 +1,164 @@
+<resources>
+
+    <string name="alert_dialog_tishi1">温馨提示</string>
+    <string name="alert_dialog_tishi2">解绑银行卡</string>
+    <string name="alert_dialog_cached_cancel">取消</string>
+    <string name="alert_dialog_cached_ok">确认</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="queding">确定</string>
+    <string name="quanxian">请赋予相机相册和存储的权限</string>
+    <string name="wenben1">做好准备</string>
+    <string name="wenben2">你的设备将会询问是否允许Smiswee</string>
+    <string name="wenben3">访问你的照片和相机。只需轻按"确定"，</string>
+    <string name="wenben4">前往该设置</string>
+    <string name="wenben5">你就可以发表你想传达的任何想法了。</string>
+    <string name="wenben6">选择照片</string>
+    <string name="wenben7">相册</string>
+    <string name="wenben8">下一步</string>
+    <string name="wenben9">发布印迹</string>
+    <string name="wenben10">存草稿</string>
+    <string name="wenben11">请说出你内心的想法...</string>
+    <string name="wenben12">发布</string>
+    <string name="wenben13"># 添加标签，获得更多推荐 #</string>
+    <string name="wenben14">拍照</string>
+    <string name="wenben15">提问</string>
+    <string name="wenben16">视频</string>
+    <string name="wenben17">视频封面</string>
+    <string name="wenben18">讲讲这个视频的故事，让更多人了解</string>
+    <string name="wenben19"># 请选择标签 #</string>
+    <string name="wenben20">选封面</string>
+    <string name="wenben21">视频封面</string>
+    <string name="wenben22">食谱详情页</string>
+
+    <string name="shurushoujihao">请输入手机号码</string>
+    <string name="shurumima">请输入密码</string>
+
+    <string name="qingshezhimima">请输入邀请码</string>
+    <string name="nicheng">昵称</string>
+    <string name="dianzan_shoucang">点赞收藏</string>
+    <string name="guanzhu_question">关注了我问题</string>
+    <string name="guanzhu_question1">关注</string>
+
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+
+    <string name="qianming">签名</string>
+    <string name="zhiye">职业</string>
+
+    <string name="qianminghint">输入签名(20字以内)</string>
+    <string name="zhiye_hint">输入职业</string>
+    <string name="qingshuruyanzhengma">请输入验证码</string>
+    <string name="paizhao">拍照</string>
+    <string name="xiangce">从手机相册选择</string>
+
+    <string name="settings">设置</string>
+    <string name="bbs_proress_content">加载中...</string>
+    <string name="ToolbarControl">标题</string>
+
+    <string name="nan">男</string>
+    <string name="nv">女</string>
+    <string name="save_caogao">保存草稿</string>
+    <string name="save_caogao2">存草稿</string>
+
+    <string name="no_save">不保存</string>
+
+    <string name="no_save2">放弃并退出</string>
+
+    <string name="login">登录</string>
+
+    <string name="mine">我的</string>
+
+    <string name="disanfang">性别</string>
+
+    <string name="zhuceone">注册</string>
+
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="setting_su">Succeed to set</string>
+
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+
+    <string name="ucrop_menu_crop">Crop</string>
+
+    <string name="ucrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
+    <string name="ucrop_mutate_exception_hint" translatable="false">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+
+    <string name="album_name_all">全部</string>
+    <string name="cx_login">重新登录</string>
+
+    <string name="button_preview">预览</string>
+    <string name="button_back">返回</string>
+    <string name="photo_grid_capture">拍一张</string>
+    <string name="empty_text">还没有图片或视频</string>
+    <string name="button_ok">我知道了</string>
+
+    <string name="error_over_count">只能上传 %1$d 张图片哦~</string>
+    <string name="error_file_type">不支持的文件类型</string>
+    <string name="error_type_conflict">不能同时选择图片和视频</string>
+    <string name="error_no_video_activity">没有支持视频预览的应用</string>
+    <string name="error_over_original_size">"该照片大于 %1$d M，无法上传将取消勾选原图"</string>
+    <string name="error_over_original_count">"有 %1$d 张照片大于 %2$d M\n无法上传，将取消勾选原图"</string>
+    <string name="button_original">原图</string>
+    <string name="button_sure_default">确定</string>
+    <string name="button_sure">确定(%1$d)</string>
+
+    <plurals name="error_over_count">
+        <item quantity="one">只能上传 %1$d 张图片哦~</item>
+        <item quantity="few">只能上传 %1$d 张图片哦~</item>
+        <item quantity="many">只能上传 %1$d 张图片哦~</item>
+        <item quantity="other">只能上传 %1$d 张图片哦~</item>
+    </plurals>
+
+    <!--标签id-->
+    <item name="tag_key_data" type="id" />
+    <item name="tag_key_position" type="id" />
+
+    <!--视频播放-->
+    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Play</string>
+    <string name="exo_controls_stop_description">Stop</string>
+    <string name="exo_controls_rewind_description">Rewind</string>
+    <string name="exo_controls_fastforward_description">Fast forward</string>
+    <string name="exo_controls_repeat_off_description">Repeat none</string>
+    <string name="exo_controls_repeat_all_description">"Repeat all"</string>
+    <string name="exo_controls_repeat_one_description">"Repeat one"</string>
+    <string name="exo_controls_shuffle_description">Shuffle</string>
+    <!--我的-->
+    <string name="media_error">The current video type is not found, or the current type is not supported, depending on the full version</string>
+    <string name="exo_play_error_hint">Play exception, video address exception, or network unavailable</string>
+    <string name="exo_play_btn_hnt">Continue to play</string>
+    <string name="net_network_no_hint">Your current network is unavailable, please check your network</string>
+    <string name="exo_play_reminder">hint</string>
+    <string name="exo_play_wifi_hint_no">Your current network is not wifi, do you continue to watch</string>
+    <string name="hint_replay_list">replay</string>
+    <array name="exo_video_switch_text">
+        <item>super</item>
+        <item>high</item>
+        <item>standard</item>
+    </array>
+    <string name="exo_fenge">/</string>
+    <string name="download_start_error">Failed to start download</string>
+
+    <!-- 更新 -->
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="release_to_refresh">下拉可以刷新</string>
+    <string name="up_refresh">正在加载更多数据……</string>
+    <string name="pull_to_refresh">松开立即刷新</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

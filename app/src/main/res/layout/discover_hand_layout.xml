@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.youth.banner.DiscoveresBanner
+            android:id="@+id/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:layout_below="@+id/discover_title" />
+
+        <RelativeLayout
+            android:id="@+id/att_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banner_layout">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="33dp"
+                android:background="@color/color_0EB39B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@+id/line"
+                android:text="值得关注的用户"
+                android:textColor="@color/color_565656"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/attention_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="24dp"
+                android:src="@drawable/icon_user_more"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/user_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/att_user_layout"
+            android:layout_marginTop="24dp">
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="1dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/color_0EB39B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/line2"
+                android:text="推荐标签"
+                android:textColor="@color/color_565656"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

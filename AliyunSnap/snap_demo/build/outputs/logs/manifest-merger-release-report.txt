@@ -1,0 +1,115 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:1:1-60:12
+	package
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:5:5-58:19
+	android:supportsRtl
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:7:9-35
+	android:label
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:6:9-41
+activity#com.aliyun.demo.snap.SnapCropSetting
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:8:9-17:20
+	android:screenOrientation
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:11:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:12:13-52
+	android:exported
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:10:13-37
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:9:13-64
+intent-filter#action:name:com.aliyun.action.snapcrop+category:name:android.intent.category.DEFAULT
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:13:13-16:29
+action#com.aliyun.action.snapcrop
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:15:27-73
+activity#com.aliyun.demo.snap.SnapRecorderSetting
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:18:9-29:20
+	android:screenOrientation
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:23:13-49
+	android:hardwareAccelerated
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:22:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:24:13-52
+	android:exported
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:21:13-37
+	android:configChanges
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:20:13-74
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:19:13-68
+intent-filter#action:name:com.aliyun.action.snaprecorder+category:name:android.intent.category.DEFAULT
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:25:13-28:29
+action#com.aliyun.action.snaprecorder
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:26:17-73
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:26:25-70
+activity#com.aliyun.demo.crop.MediaActivity
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:31:9-40:20
+	android:screenOrientation
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:33:13-49
+	android:theme
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:34:13-55
+	tools:replace
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:35:13-42
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:32:13-62
+intent-filter#action:name:com.aliyun.action.crop+category:name:android.intent.category.DEFAULT
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:36:13-39:29
+action#com.aliyun.action.crop
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:37:17-65
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:37:25-62
+activity#com.aliyun.demo.crop.AliyunVideoCropActivity
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:42:9-46:54
+	android:screenOrientation
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:44:13-49
+	android:theme
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:45:13-55
+	tools:replace
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:46:13-42
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:43:13-72
+activity#com.aliyun.apsaravideo.recorder.AliyunVideoRecorder
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:48:9-57:20
+	android:screenOrientation
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:50:13-49
+	android:theme
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:51:13-55
+	tools:replace
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:52:13-42
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:49:13-79
+intent-filter#action:name:com.aliyun.action.recorder+category:name:android.intent.category.DEFAULT
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:53:13-56:29
+action#com.aliyun.action.recorder
+ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:54:17-69
+	android:name
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml:54:25-66
+uses-sdk
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+		ADDED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml
+		INJECTED from /Users/shiyujia02/Desktop/shiyujiaapp/AliyunSnap/snap_demo/src/main/AndroidManifest.xml

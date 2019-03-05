@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+    <com.app.cookbook.xinhe.foodfamily.util.otherUi.SmoothImageView
+        android:id="@+id/images_detail_smooth_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/save_btn"
+        android:layout_width="79dp"
+        android:background="@drawable/shape_save_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="保存图片"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

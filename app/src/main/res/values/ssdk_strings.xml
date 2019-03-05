@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--sina web -->
+
+
+    <!-- sms login -->
+
+    <item name="ssdk_sina_web_title_id" type="id" />
+	<item name="ssdk_sms_id_clCountry" type="id" />
+	<item name="ssdk_sms_id_ll_back" type="id" />
+	<item name="ssdk_sms_id_tv_title" type="id" />
+	<item name="ssdk_sms_id_llTitle" type="id" />
+	<item name="ssdk_sms_id_ivSearch" type="id" />
+	<item name="ssdk_sms_id_llSearch" type="id" />
+	<item name="ssdk_sms_id_et_put_identify" type="id" />
+	<item name="ssdk_sms_id_iv_clear" type="id" />
+</resources>

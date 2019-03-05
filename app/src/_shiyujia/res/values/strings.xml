@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="alert_dialog_tishi1">温馨提示</string>
+    <string name="alert_dialog_tishi2">解绑银行卡</string>
+    <string name="alert_dialog_cached_cancel">取消</string>
+    <string name="alert_dialog_cached_ok">确认</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="queding">确定</string>
+
+
+    <string name="shurushoujihao">请输入手机号码</string>
+    <string name="shurumima">请输入密码</string>
+    <string name="wangjimima">忘记密码？</string>
+
+    <string name="qingshezhimima">请输入邀请码</string>
+    <string name="qingshurumima">请设置密码</string>
+
+    <string name="qingshuruyanzhengma">请输入验证码</string>
+
+    <string name="add_wodeshidan">添加至我的食单</string>
+    <string name="zanwushiping">暂无上传视频</string>
+
+    <string name="paizhao">拍照</string>
+    <string name="xiangce">从手机相册选择</string>
+
+    <string name="settings">设置</string>
+    <string name="bbs_proress_content">加载中...</string>
+    <string name="ToolbarControl">标题</string>
+
+    <string name="nan">男</string>
+    <string name="nv">女</string>
+
+    <string name="fasongyanzhengma">发送验证码</string>
+    <string name="login">登录</string>
+
+    <string name="mine">我的</string>
+
+    <string name="disanfang">性别</string>
+
+    <string name="zhuce">我要注册</string>
+    <string name="zhuceone">注册</string>
+
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="setting_su">Succeed to set</string>
+
+</resources>

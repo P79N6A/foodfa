@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <chuangyuan.ycj.videolibrary.widget.VideoPlayerView
+            android:id="@+id/home_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            app:auto_show="true"
+            app:controller_layout_id="@layout/custom_exo_playback_top_view"
+            app:hide_on_touch="false"
+            app:player_error_layout_id="@layout/custom_play_error"
+            app:player_fullscreen_image_selector="@drawable/custom_full_selector"
+            app:player_hint_layout_id="@layout/custom_play_btn_hint"
+            app:player_layout_id="@layout/simple_exo_view"
+            app:player_list="true"
+            app:player_load_layout_id="@layout/custom_exo_play_load"
+            app:player_preview_layout_id="@layout/exo_default_preview_layout"
+            app:player_replay_layout_id="@layout/simple_exo_play_replay"
+            app:resize_mode="fit"
+            app:show_timeout="3000"
+            app:surface_type="texture_view"
+            app:use_artwork="true"
+            app:user_watermark="@color/color_00000000" />
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_00000000">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_details_back"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/back_im"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_recommend" />
+
+            <ImageView
+                android:id="@+id/more_im"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_videoView"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none" />
+
+        <!--<com.andview.refreshview.XRefreshView-->
+        <!--android:id="@+id/xrefreshview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:background="#ffffff">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/comm_recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:scrollbars="none" />-->
+        <!--</com.andview.refreshview.XRefreshView>-->
+
+        <LinearLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/btn_layout"
+                android:background="#E4E4E4" />
+
+            <LinearLayout
+                android:id="@+id/comment_zan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/comment_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/home_details_comm_bg"
+                        android:gravity="center_vertical"
+                        android:text="走心评论..."
+                        android:textColor="@color/color_999999" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/zan_relayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.like.LikeButton
+                            android:id="@+id/zan_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:circle_end_color="@color/white"
+                            app:circle_start_color="@color/white"
+                            app:dots_primary_color="@color/white"
+                            app:dots_secondary_color="@color/white"
+                            app:icon_size="18dp"
+                            app:like_drawable="@drawable/home_like_on"
+                            app:unlike_drawable="@drawable/home_like_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shoucang_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.like.LikeButton
+                            android:id="@+id/shoucang_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:circle_end_color="@color/white"
+                            app:circle_start_color="@color/white"
+                            app:dots_primary_color="@color/white"
+                            app:dots_secondary_color="@color/white"
+                            app:icon_size="18dp"
+                            app:like_drawable="@drawable/home_collect_on"
+                            app:unlike_drawable="@drawable/home_collect_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shaer_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/comm_image"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/icon_answer_share" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/edit_alyout"
+            layout="@layout/reply_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
